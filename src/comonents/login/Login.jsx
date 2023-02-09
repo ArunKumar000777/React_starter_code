@@ -4,7 +4,6 @@ import "./login.css";
 
 const Login = () => {
     const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -26,23 +25,29 @@ const Login = () => {
     };
     console.log(username);
     return (
-        <div className={username? 'offScreen':'login'}>
-            <form onSubmit={handleLogin}>
-                <h1>SIGN UP</h1>
-                <label htmlFor="username">username</label>
-                <input
-                    type="text"
-                    placeholder="username"
-                    id="username"
-                    onChange={(e) => {
-                        setUsername(e.target.value);
-                    }}
-                />
-                <label htmlFor="password">password</label>
-                <input type="password" placeholder="password" id="password" onChange={(e) => setPassword(e.target.value)} />
-                <button type="submit">login</button>
-            </form>
-            {/* {username ? <Products /> : null} */}
+        <div className="main">
+            <div className="login">
+                <form onSubmit={handleLogin} className={username ? "offScreen" : "form"}>
+                    <h1>SIGN UP</h1>
+                    <label htmlFor="username">username</label>
+                    <input
+                        type="text"
+                        placeholder="username"
+                        id="username"
+                        onChange={(e) => {
+                            setUsername(e.target.value);
+                        }}
+                    />
+                    <label htmlFor="password">password</label>
+                    <input
+                        type="password"
+                        placeholder="password"
+                        id="password"
+                    />
+                    <button type="submit">login</button>
+                </form>
+                {username ? <Products /> : null}
+            </div>
         </div>
     );
 };

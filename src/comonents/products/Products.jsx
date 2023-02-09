@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./products.css";
+import Product from "../productDetail/Product";
+import { Link } from "react-router-dom";
 const Products = () => {
     const [products, setProducts] = useState("");
     useEffect(() => {
@@ -19,10 +21,13 @@ const Products = () => {
                 {products &&
                     products.map((product) => {
                         return (
-                            <div key={product.id} className="products__single">
-                                <img src={product.thumbnail} alt={product.title} />
-                                <span>{product.title}</span>
-                            </div>
+                            // <div key={product.id} className="products__single">
+                            //     <img src={product.thumbnail} alt={product.title} />
+                            //     <span>{product.title}</span>
+                            // </div>
+                            <Link to={`/product/${product?.id}`}>
+                                <Product key={product?.id} product={product} />
+                            </Link>
                         );
                     })}
             </div>

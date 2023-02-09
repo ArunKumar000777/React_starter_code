@@ -1,0 +1,13 @@
+.single_product_container{
+
+}
+.single_Product{
+}
+.single_product_container>img{
+    width: 250px;
+    height: 290px;
+}
+.single_product_container{
+    display: flex;
+    flex-direction: column;
+}

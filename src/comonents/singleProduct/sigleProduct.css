@@ -1,0 +1,10 @@
+.singleProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.singleProduct > img {
+    width: 400px;
+    height: 300px;
+}

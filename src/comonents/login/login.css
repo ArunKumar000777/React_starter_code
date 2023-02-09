@@ -19,8 +19,26 @@
 }
 .login > .form > h1 {
     font-size: 20px;
+    margin-bottom: 20px;
+}
+.form > label {
+    margin-right: 100px;
 }
 
 .offScreen {
     display: none;
+}
+.form{
+    -webkit-box-shadow: 10px 10px 13px -5px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 10px 10px 13px -5px rgba(0, 0, 0, 0.56);
+    box-shadow: 10px 10px 13px -5px rgba(0, 0, 0, 0.56);
+    border-radius: 10px;
+}
+.btn {
+    border: none;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }

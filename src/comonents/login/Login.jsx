@@ -44,7 +44,7 @@ const Login = () => {
                         placeholder="password"
                         id="password"
                     />
-                    <button type="submit">login</button>
+                    <button type="submit" className="btn" >login</button>
                 </form>
                 {username ? <Products /> : null}
             </div>

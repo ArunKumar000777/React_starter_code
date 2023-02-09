@@ -1,0 +1,21 @@
+.container > h1 {
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.products__single {
+}
+
+.products__single > img {
+    width: 250px;
+    height: 260px;
+}
+.products__single > span {
+}
